@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body >
+    
+
+    <label for="gae">Enter Your Age</label>
+    <input type="text" id="age" placeholder="Enter Your Age " />
+    <button type="submit" onclick="foo()">Click</button>
+    <br />
+    <br />
+    <label for="email">Enter Your Email</label>
+    <input type="email" id="email" placeholder="Enter Your Email" />
+    <button type="submit" onclick="handleSumbit()">Click</button>
+    <br />
+    <br />
+
+    <script>
+      function foo() {
+        const res = document.getElementById("age").value;
+        console.log(res);
+
+        if (res >= 18) {
+          // console.log("Your Eligible For Vote")
+          alert("Your Eligible For Vote");
+        } else {
+          // console.log("Your Not Eligible For Vote");
+          alert("Your Not Eligible For Vote");
+        }
+      }
+
+      //   let mail = ["johnrasu21@gmail.com"];
+
+      function handleSumbit() {
+        const reult = document.getElementById("email").value;
+
+        if (reult === "johnrasu21@gmail.com") {
+          alert("Email Id Valid");
+        } else {
+          alert("Email Id Not Valid");
+        }
+      }
+      <br />;
+    </script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
